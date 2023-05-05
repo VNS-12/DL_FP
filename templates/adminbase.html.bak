@@ -1,0 +1,121 @@
+{% load static %}
+
+
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>::User::</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+
+		<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/fontAwesome.css' %}">
+        <link rel="stylesheet" href="{% static 'css/templatemo-style.css' %}">
+        <script src="{% static 'js/vendor/modernizr-2.8.3-respond-1.4.2.min.js' %}"></script>
+
+	
+	<
+<head>
+<style>
+#tab {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+   
+}
+
+#tab td, #tab th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#tab tr:nth-child(even){background-color: #f2f2f2;}
+
+#tab tr:hover {background-color: #ddd;}
+
+#tab th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
+</head>
+
+
+
+	<body>
+
+        <div class="overlay"></div>
+        
+        <section class="cd-hero">
+
+          <div class="cd-slider-nav2">
+            <nav>
+              <span class="cd-marker item-1"></span>
+              <ul>
+
+                <li class="selected"><a href="/adminhome"><div class="image-icon">
+				<img src="{%static 'img/home-icon.png'%}"></div><h6><br>Home</h6></a></li>
+				
+			
+				  
+				 <li class="selected"><a href="/features"><div class="image-icon">
+				<img src="{%static 'img/classification.png'%}"></div><h6><br>Classificaion</h6></a></li>
+				  	  
+               
+				
+
+                <li class="selected"><a href="/alogout"><div class="image-icon">
+				<img src="{%static 'img/logout.png'%}"></div><h6><br>Logout</h6></a></li>
+
+              </ul>
+            </nav> 
+          </div> 
+
+ 
+<br>
+              <div class="cd-full-width first-slide">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="content first-content">
+
+						{% block content %}
+                        <h1>Welcome..</h4>
+                        <!-- <p>Newline is free CSS template by TemplateMo. Credits go to <a href="https://videos.pexels.com/videos/busy-street-in-the-city-1089" target="_blank">Pexels.com</a> for a video background and <a href="http://unsplash.com" target="_blank">Unsplash</a> for images. Please tell your friends about TemplateMo and this is a way to help back. Thank you. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum convallis mi. In dapibus auctor dictum donec mattis quis eros ultricies feugiat.</p>
+                        <div class="primary-button">
+                          <a href="#">Discover More</a>
+                        </div>
+                      --> 
+					  
+					  {% endblock %}
+					  
+					  </div>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+            </li>
+
+
+
+            
+
+        <footer>
+          <p>Copyright &copy; 2022-23 
+                                
+        	| Designed by <em>Our Team</em></p>
+        </footer>
+    
+        
+    </body>
+</html>

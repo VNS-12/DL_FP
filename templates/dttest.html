@@ -1,0 +1,23 @@
+{% extends 'adminbase.html' %}
+{% block content %}
+
+
+
+<center>
+<font size="+1" color="red">{{msg}}</font>
+<form method="post" action="/dtprediction/">
+	{% csrf_token %}<b>
+	<h3>Decision Tree Algorithm</h3><br>
+<table id="tab" width="60%"> 
+<tr><td>Upload Trainig File:<br>
+<input type="file" name="trfile" class="form-control" required accept=".csv">
+<tr><td>Upload Testing File:<br>
+<input type="file" name="tfile" required accept=".csv" class="form-control">
+	<tr><td>
+	<input type="submit" value="Upload" class="form-control">
+</table>
+</form>
+<br><br><br><br><br>	
+
+
+{% endblock %}

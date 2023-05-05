@@ -1,0 +1,57 @@
+
+{% extends 'adminbase.html' %}
+{% block content %}
+
+
+
+<center>
+<font size="+1" color="red">{{msg}}</font>
+
+<font size="" color=""><h2>Feature-based Classification Analysis</h2><br></font>
+
+<table id="tab" width="40%"> 
+<tr><td>
+<form method="post" action="/naivetest/">
+	{% csrf_token %} 
+	<input type="submit" value="Naive Bayees Algorithm" class="form-control">
+</form>
+</table>
+<table id="tab" width="40%"> 
+<tr><td>
+<form method="post" action="/dttest/">
+	{% csrf_token %} 
+	<input type="submit" value="Decision Tree Algorithm" class="form-control">
+</form>
+</table>
+
+<table id="tab" width="40%"> 
+<tr><td>
+<form method="post" action="/nntest/">
+	{% csrf_token %} 
+	<input type="submit" value="Neural Network Algorithm" class="form-control">
+</form>
+</table>
+<table id="tab" width="40%"> 
+<tr><td>
+<form method="post" action="/svmtest/">
+	{% csrf_token %} 
+	<input type="submit" value="SVM Algorithm" class="form-control">
+</form>
+</table>
+	{% csrf_token %} 
+</form>
+
+<br><br>
+<table id="tab" width="40%"> 
+<tr><td>
+<form method="post" action="/featureres/">
+	{% csrf_token %} 
+	<input type="submit" value="View Results" class="form-control">
+</form>
+</table>
+	{% csrf_token %} 
+</form>
+
+<br><br><br>	
+</table>
+{% endblock %}
